@@ -1,9 +1,11 @@
 #include "LED.h"
 
 
-LED_HANDLE led_handle[2]={
-	{"LED0",(GPIO_TypeDef*)GPIOA_BASE,8,OFF},
-	{"LED1",(GPIO_TypeDef*)GPIOD_BASE,2,OFF},
+LED_HANDLE led_handle[4]={
+	{"LED_RED",(GPIO_TypeDef*)GPIOC_BASE,9,OFF},
+	{"LED_GREEN",(GPIO_TypeDef*)GPIOC_BASE,8,OFF},
+	{"LED_YELLO",(GPIO_TypeDef*)GPIOC_BASE,7,OFF},
+	{"BUZZ",(GPIO_TypeDef*)GPIOB_BASE,10,OFF},
 };
 
 
@@ -11,8 +13,8 @@ void LED_Init(void)
 {
 	int i=0;
 	int temp;
-	RCC->APB2ENR|=1<<2; 		//GPIOA
-	RCC->APB2ENR|=1<<5; 		//GPIOD
+	RCC->APB2ENR|=1<<3; 		//GPIOB
+	RCC->APB2ENR|=1<<4; 		//GPIOC
 	
 	for(i=0;i<sizeof(led_handle)/sizeof(led_handle[0]);i++)
 	{

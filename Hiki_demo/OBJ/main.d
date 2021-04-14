@@ -34,6 +34,4 @@
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: ..\HARDWARE\KEY\KEY.h
-..\obj\main.o: ..\HARDWARE\LCD\LCD.h
-..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\main.o: ..\HARDWARE\W25X16\W25X16.h
+..\obj\main.o: ..\HARDWARE\ADC\adc.h

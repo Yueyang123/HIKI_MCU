@@ -332,7 +332,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\SYSTEM\sys;..\SYSTEM\delay;..\HARDWARE\KEY;..\SYSTEM\usart;..\HARDWARE\LED;..\MALLOC;..\HARDWARE\NRF24L01;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\W25X16;..\HARDWARE\LCD;..\USER;..\HARDWARE\SPI</IncludePath>
+              <IncludePath>..\SYSTEM\sys;..\SYSTEM\delay;..\HARDWARE\KEY;..\SYSTEM\usart;..\HARDWARE\LED;..\MALLOC;..\STM32F10x_FWLib\inc;..\CORE;..\HARDWARE\ADC;..\USER</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -406,19 +406,9 @@
               <FilePath>..\HARDWARE\KEY\KEY.c</FilePath>
             </File>
             <File>
-              <FileName>LCD.c</FileName>
+              <FileName>adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\HARDWARE\LCD\LCD.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\SPI\spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>W25X16.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\W25X16\W25X16.c</FilePath>
+              <FilePath>..\HARDWARE\ADC\adc.c</FilePath>
             </File>
           </Files>
         </Group>

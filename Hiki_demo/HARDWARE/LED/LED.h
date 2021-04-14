@@ -4,7 +4,7 @@
 
 //目标：初始化三个LED灯以及一个BUZZ
 
-typedef enum{LED0=0,LED1}LED_ENUM; 
+typedef enum{LED_RED=0,LED_GREEN,LED_YELLOW,BUZZ}LED_ENUM; 
 typedef enum{OFF,ON}LED_STATUS;
 typedef struct {
 	char* 		 				led_name;
